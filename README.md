@@ -23,3 +23,11 @@ a contiguous C (row-major) tensor, call `force(Tensor<T>::CONTIGUOUS)`, which
 may also create a unique copy.
 
 Please see the header file `<thpp/Tensor.h>` for more details.
+
+----------------------------------------------------------------------------
+For building the OCR-project [CRNN](https://github.com/bgshih/crnn), following changes
+have been made:
+
+1) gnu compiler flag changed in `thpp/CMakeLists.txt` mentioned [here](https://github.com/facebookarchive/thpp/pull/32/files)
+and [here](https://github.com/facebookarchive/thpp/issues/44).
+2) number of argumnets changed in `thpp/detail/TensorGeneric.h` mentioned [here](https://github.com/facebookarchive/thpp/pull/42/files) and [here](https://github.com/facebookarchive/thpp/issues/44).
